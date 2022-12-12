@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+
+<HEAD>
+	<script> 
+	function sin()
+	{
+	var opp,adj,tan,temp,hyp;
+	opp = parseInt(document.getElementById("first").value);
+	adj = parseInt(document.getElementById("second").value);
+	
+	temp=(opp*opp)+(adj*adj);
+	hyp=Math.sqrt(temp);
+	sin=opp/hyp;
+	
+		document.getElementById("sin").value=sin;
+		
+	}
+		function cos()
+	{
+	var opp,adj,tan,temp,hyp;
+	opp = parseInt(document.getElementById("first").value);
+	adj = parseInt(document.getElementById("second").value);
+	
+	temp=(opp*opp)+(adj*adj);
+	hyp=Math.sqrt(temp);
+	cos=adj/hyp;
+	
+		document.getElementById("cos").value=cos;
+		
+	}
+	
+		function tan()
+	{
+	var opp,adj,tan,temp,hyp;
+	opp = parseInt(document.getElementById("first").value);
+	adj = parseInt(document.getElementById("second").value);
+	
+	temp=(opp*opp)+(adj*adj);
+	hyp=Math.sqrt(temp);
+	tan=opp/adj;
+	
+		document.getElementById("tan").value=tan;
+		
+	}
+		function cosec()
+	{
+	var opp,adj,tan,temp,hyp;
+	opp = parseInt(document.getElementById("first").value);
+	adj = parseInt(document.getElementById("second").value);
+	
+	temp=(opp*opp)+(adj*adj);
+	hyp=Math.sqrt(temp);
+	cosec=hyp/opp;
+	
+		document.getElementById("cosec").value=cosec;
+		
+	}
+			function sec()
+	{
+	var opp,adj,tan,temp,hyp;
+	opp = parseInt(document.getElementById("first").value);
+	adj = parseInt(document.getElementById("second").value);
+	
+	temp=(opp*opp)+(adj*adj);
+	hyp=Math.sqrt(temp);
+	sec=hyp/adj;
+	
+		document.getElementById("sec").value=sec;
+		
+	}
+			function cot()
+	{
+	var opp,adj,tan,temp,hyp;
+	opp = parseInt(document.getElementById("first").value);
+	adj = parseInt(document.getElementById("second").value);
+	
+	temp=(opp*opp)+(adj*adj);
+	hyp=Math.sqrt(temp);
+	cot=adj/opp;
+	
+		document.getElementById("cot").value=cot;
+		
+	}
+	</script>
+	<style>
+	
+	#first{
+	width:100px;
+	height:30px;
+	padding-left:10px;
+	margin-left:10px;
+	border-radius:5px;
+	align-items:center;
+	position:absolute;
+	top:1610px;
+	}
+		#second{
+	width:100px;
+	height:30px;
+	padding-left:10px;
+	margin-left:10px;
+	border-radius:5px;
+	align-items:center;
+	position:absolute;
+	top:1695px;
+	}
+	
+        .blink {
+            animation: blinker 1s linear infinite;
+            color: red;
+            font-family: serif;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+			}
+			
+			
+		
+        
+    </style>
+</HEAD>
+	<body style="background-color:#58D68D">
+	
+	 <P class="blink" STYLE="FONT-SIZE:80PX" align="center"><B> TRIGONOMETRIC CALCULATOR </B></p>
+	 <DIV>
+	 <H1>
+	 Right Angled Triangle </H1>
+	 <P STYLE="FONT-SIZE:20PX">
+A right-angled triangle is a type of triangle that has one of its angles equal to 90 degrees. The other two angles sum up to 90 degrees. The sides that include the right angle are perpendicular and the base of the triangle. The third side is called the hypotenuse, which is the longest side of all three sides. 
+<BR>
+The three sides of the right triangle are related to each other. This relationship is explained by Pythagoras theorem. According to this theorem, in a right triangle,
+<BR>
+Hypotenuse2 = Perpendicular2 + Base2
+<BR>
+See the figure below to understand better.<BR>
+<br>
+<br>
+<IMG SRC="a.PNG" width="900" height="400"><P STYLE="FONT-SIZE:20PX">
+The area of the biggest square is equal to the sum of the square of the two other small square areas. We can generate the Pythagoras theorem as the square of the length of the hypotenuse is equal to the sum of the length of squares of base and height.
+</P>
+<IMG SRC="b.PNG" width="800" height="500">
+<H1>
+Shape of Right Triangle</H1>
+<P STYLE="FONT-SIZE:20PX">
+A right triangle is a three-sided closed shape, that has one perpendicular side called the leg or height of the triangle. 
+</P>
+	 </P>
+	 </DIV>
+	<div align="center">
+          <p  STYLE="FONT-SIZE:40PX"> ENTER OPPOSITE :<input id="first"> </p>
+		  <p  STYLE="FONT-SIZE:40PX"> ENTER ADJUSANT :<input id="second"> </p>
+		  <table border width="1000" height="400" style="background-color:#EB984E">
+		  <tr>
+		  <td>
+		  <button onclick ="sin()">   <p  STYLE="FONT-SIZE:20PX">Calculate</p> </button>
+		  <p STYLE="FONT-SIZE:20PX"> sin = <input id="sin"> </p>
+		 </td>
+		
+		  <td>
+		
+			<button onclick ="cos()"><p  STYLE="FONT-SIZE:20PX">Calculate</p></button>
+		  <p STYLE="FONT-SIZE:20PX"> cos = <input id="cos"> </p>
+		   </td>
+		 </tr>
+		 <tr>
+		  <td>
+	<button onclick ="cosec()"> <p  STYLE="FONT-SIZE:20PX">Calculate</p></button>
+		  <p STYLE="FONT-SIZE:20PX">cosec= <input id="cosec"> </p> 
+		  </td>
+		
+		  <td>
+		<button onclick ="sec()"><p  STYLE="FONT-SIZE:20PX">Calculate</p></button>
+		  <p STYLE="FONT-SIZE:20PX">sec= <input id="sec"> </p> 
+		  
+		   </td>
+		 </tr>
+			 	 	  <tr>
+		  <td>
+			<button onclick ="tan()"><p  STYLE="FONT-SIZE:20PX">Calculate</p></button>
+		  <p STYLE="FONT-SIZE:20PX">tan = <input id="tan"> </p> 
+			
+	</td>
+		
+		  <td>
+		  	<button onclick ="cot()"><p  STYLE="FONT-SIZE:20PX">Calculate</p></button>
+		  <p STYLE="FONT-SIZE:20PX">cot= <input id="cot"> </p> 
+		   </td>
+		 </tr>
+			 
+		  			 	 	 </table>
+							 </div>
+	</body>
+	</html>	
